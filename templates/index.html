@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>LuckyNum</title>
+  <script src="https://unpkg.com/jquery"></script>
+</head>
+
+<body>
+
+  <form id="lucky-form" method="post">
+    {{ form.hidden_tag() }}
+    <div>Name: {{ form.name }} <b id="name-err"></b> </div>
+    <div>Birth Year: {{ form.birth_year }} <b id="year-err"></b> </div>
+    <div>Email: {{ form.email }} <b id="email-err"></b> </div>
+    <div>Color: {{ form.color }} <b id="color-err"></b> </div>
+    {{ form.submit() }}
+  </form>
+
+  <div id="lucky-results" class="hidden"></div>
+
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="/static/lucky.js"></script>
+  <link rel="stylesheet" href="/static/styles.css">
+
+</body>
+
+</html>

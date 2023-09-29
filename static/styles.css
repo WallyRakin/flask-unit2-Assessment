@@ -1,0 +1,80 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Center the form on the page */
+form#lucky-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Style the form divs */
+form#lucky-form div {
+    margin-bottom: 15px;
+}
+
+/* Style all input fields, select dropdowns, and the submit button */
+form#lucky-form input,
+form#lucky-form select,
+form#lucky-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    /* ensures padding and border are included in the width */
+}
+
+/* Style the error messages */
+form#lucky-form b {
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* Style the submit button */
+form#lucky-form input[type="submit"] {
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form#lucky-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the results div */
+div#lucky-results {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
